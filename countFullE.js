@@ -14,11 +14,13 @@ let str = 'Je suis le ténébreux, - le veuf, - l\'inconsolé,\n'+
 'Les soupirs de la sainte et les cris de la fée.'
 
 let countE = 0
+let up = str.toUpperCase()
+let low = str.toLowerCase()
+
 
 for (let i = 0; i < str.length; ++i ){
-    if(str[i] === 'e'){
+    if(low[i] === 'e' || up[i] === 'E'){
       countE = countE + 1
-    }
 }
-
+}
 console.log(`In this text you have ${countE} e characters`)
