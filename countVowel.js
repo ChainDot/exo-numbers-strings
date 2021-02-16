@@ -13,14 +13,17 @@ let str = 'Je suis le ténébreux, - le veuf, - l\'inconsolé,\n'+
 'Modulant tour à tour sur la lyre d\'Orphée\n'+
 'Les soupirs de la sainte et les cris de la fée.'
 
-let countE = 0
+const vowel = ['a','à','A','e','é','è','ê','E','i','I','o','O','u','ù','U','y','Y']
+let CountVowel = 0
 let up = str.toUpperCase()
 let low = str.toLowerCase()
 
-
-for (let i = 0; i < str.length; ++i ){
-    if(low[i] === 'e' || up[i] === 'E'){
-      countE = countE + 1
-    }
+for ( let i = 0; i < str.length; i++){
+  if(low[i] ===  'a' || low[i] === 'à' || up[i] ===  'A' || low[i] ===  'e' || low[i] ===  'é' || low[i] ===  'è' || low[i] ===  'ê' || up[i] ===  'E' ||  low[i] ===  'i' || up[i] ===  'I' ||  low[i] ===  'o' || up[i] ===  'O' ||  low[i] ===  'u' ||  low[i] ===  'ù'  || up[i] ===  'U' ||  low[i] ===  'y' || up[i] ===  'Y'){
+      CountVowel = CountVowel + 1
+  }  
 }
-console.log(`In this text you have ${countE} e characters`)
+
+console.log(`In this text you have ${CountVowel} Vowels`)
+
+
