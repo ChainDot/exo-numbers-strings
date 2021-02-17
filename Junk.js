@@ -14,15 +14,16 @@ let str = 'Je suis le ténébreux, - le veuf, - l\'inconsolé,\n'+
 'Les soupirs de la sainte et les cris de la fée.'
 
 const vowel = ['a','à','A','e','é','è','ê','E','i','I','o','O','u','ù','U','y','Y']
-let CountVowel = 0
-let up = str.toUpperCase()
-let low = str.toLowerCase()
 
-for ( let i = 0; i < str.length; i++){
-  if(low[i] === vowel.length){
-    CountVowel = CountVowel + 1
-  }
-}
+str = str.toLowerCase()
+let CountVowel = 0
+
+for ( let i = 0; i < str.length; i++) for(let j = 0; j < vowel.length; j++){
+      if(str[i] === vowel[j]){
+        CountVowel = CountVowel + 1
+      }
+    }   
+  
 
 
 console.log(`In this text you have ${CountVowel} Vowels`)

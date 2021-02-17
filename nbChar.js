@@ -16,3 +16,5 @@ let str = 'Je suis le ténébreux, - le veuf, - l\'inconsolé,\n'+
 
 
 console.log(`In this text you have ${str.length} characters`)
+console.log('\n')
+console.log(str)

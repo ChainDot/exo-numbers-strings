@@ -1,4 +1,5 @@
-let str = 'Je suis le ténébreux, - le veuf, - l\'inconsolé,\n'+
+let str = 
+'Je suis le ténébreux, - le veuf, - l\'inconsolé,\n'+
 'Le prince d\'Aquitaine à la tour abolie :\n'+
 'Ma seule étoile est morte, - et mon luth constellé\n'+
 'Porte le soleil noir de la Mélancolie.\n\n'+

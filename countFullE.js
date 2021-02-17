@@ -17,6 +17,8 @@ let countE = 0
 let up = str.toUpperCase()
 let low = str.toLowerCase()
 
+// str = text.ToLowerCase()
+// console.log(str)
 
 for (let i = 0; i < str.length; ++i ){
     if(low[i] === 'e' || up[i] === 'E'){
